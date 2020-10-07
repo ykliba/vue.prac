@@ -1,3 +1,10 @@
-let app = new VTTCue({
-  el: '#app'
+let app = new Vue({
+  el: '#app',
+  
+    methods: {
+      handleClick: function(event) {
+        alert(event.target)
+      }
+    
+  }
 })
