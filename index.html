@@ -7,16 +7,13 @@
 </head>  
 <body>
   <div id="app">
-    <ul>
-      <li v-for="(item, index) in list" v-bind:key="item.id">
-        ID.{{ item.id }} {{ item.name }} HP.{{ item.hp }}
-      </li>
-    </ul>
+    <input id="message" v-on:input="handleInput">
+    <button data-update="jQuery!">jQueryからの更新</button>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/axios@0.17.1/dist/axios.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/axios@0.17.1/dist/axios.min.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
   <script src="main.js"></script>
-  <script src="axios.min.js"></script>
+  <!-- <script src="axios.min.js"></script> -->
   
 </body>
 </html>
